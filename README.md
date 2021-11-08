@@ -1,4 +1,4 @@
-![Peter Kellett logo](https://res.cloudinary.com/dfboxofas/image/upload/v1611675581/project-4/blackhillls_logo_qgtqtm.png)
+![Peter Kellett logo](https://res.cloudinary.com/dfboxofas/image/upload/c_scale,w_250/v1611675581/project-4/blackhillls_logo_qgtqtm.png)
 
 Welcome PeterKellett,
 
