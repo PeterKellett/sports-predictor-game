@@ -1,0 +1,44 @@
+<!doctype html>
+{% extends "base.html" %}
+{% load static %}
+{% block page_header %}
+        <h1 class='mt-5'>Premier League Predictor Game (index block page_header)</h1>
+{% endblock %}
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h1 class="bg-success text-center">Matches</h1>
+        </div>
+    </div>
+    {% for match in matches %}
+        <div class="row">
+            <div class="col-5">               
+                <p><span class="home-team">{{ match.home_team }}</span>
+                    {% if match.home_team_score == None %}
+                        <span class="home-team-score"> - </span>
+                    {% else %}
+                        <span class="home-team-score">{{ match.home_team_score }}</span>
+                    {% endif %}
+                </p>                
+            </div>
+            <div class="col-2">
+                <p class="text-center">V</p>
+            </div>
+            <div class="col-5">
+                <p><span class="away-team">{{ match.away_team }}</span>
+                    {% if match.home_team_score == None %}
+                        <span class="away-team-score"> - </span>
+                    {% else %}
+                        <span class="away-team-score">{{ match.away_team_score }}</span>
+                    {% endif %}
+                </p>                
+            </div>
+            <div class="col-12">
+                <p class="text-center text-muted"><small>{{ match.date }}</small></p>
+            </div>
+        </div>
+    {% endfor %}
+</div>
+
+{% endblock %}

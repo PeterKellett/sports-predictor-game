@@ -2,3 +2,32 @@ html {
     height: 100%;
 }
 
+.allauth-form-inner-content p {
+    margin-top: 1.5rem; /* mt-4 */
+    color: #6c757d; /* text-secondary */
+}
+
+.nav-link {
+    font-family: 'Roboto', sans-serif;
+    color: #000;
+}
+.nav-link:hover {
+    background-color: #985d65;
+    color: #fff;
+}
+
+.home-team {
+    float: left;
+}
+
+.home-team-score {
+    float: right;
+}
+
+.away-team {
+    float: right;
+}
+
+.away-team-score {
+    float: left;
+}
